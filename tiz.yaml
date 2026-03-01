@@ -60,14 +60,14 @@ proxy-groups:
   - name: 节点选择
     type: select
     proxies:
-      - 流媒体节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
-      - DIRECT
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Available.png
 
   - name: 手动切换
@@ -78,34 +78,18 @@ proxy-groups:
   - name: 流媒体节点选择
     type: select
     proxies:
-      - 流媒体节点
+      - DIRECT
+      - 节点选择
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
-      - DIRECT
+      - 流媒体节点
     # icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Available_1.png
-
-  - name: 流媒体节点
-    type: select
-    use: [Airport01, Airport02]
-    filter: 0.1|0.2|0.3|0.5|实验性
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
-
-  - name: 香港节点
-    type: select
-    use: [Airport01, Airport02]
-    filter: 港|🇭🇰|香港|HK|Hong
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
-
-  - name: 美国节点
-    type: select
-    filter: 美|🇺🇸|美国|US|States|American
-    use: [Airport01, Airport02]
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 
   # - name: 自动选择
   #   type: url-test
@@ -118,15 +102,16 @@ proxy-groups:
   - name: 国外视频
     type: select
     proxies:
+      - DIRECT
       - 节点选择
-      - 流媒体节点选择
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
-      - DIRECT
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Netflix.png
 
   - name: Google
@@ -134,12 +119,14 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - 美国节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
-      - 手动切换
+      - 美国节点
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Google_Search.png
 
   - name: Github
@@ -147,78 +134,89 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - 美国节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
-      - 手动切换
+      - 美国节点
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/GitHub.png
 
   - name: Telegram
     type: select
     proxies:
+      - DIRECT
       - 节点选择
-      - 流媒体节点选择
-      - 狮城节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
+      - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
-      - DIRECT
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Telegram.png
 
   - name: AI
     type: select
     proxies:
+      - DIRECT
       - 节点选择
-      - 狮城节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
+      - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
-      - DIRECT
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Copilot.png
 
   - name: Instagram
     type: select
     proxies:
+      - DIRECT
       - 节点选择
-      - 流媒体节点选择
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Instagram.png
 
   - name: Spotify
     type: select
     proxies:
+      - DIRECT
       - 节点选择
-      - 流媒体节点选择
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Spotify.png
 
   - name: Twitter
     type: select
     proxies:
+      - DIRECT
       - 节点选择
-      - 流媒体节点选择
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Twitter.png
 
   - name: Microsoft
@@ -226,12 +224,14 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - 美国节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
-      - 手动切换
+      - 美国节点
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Microsoft.png
 
   - name: Apple
@@ -239,41 +239,68 @@ proxy-groups:
     proxies:
       - DIRECT
       - 节点选择
-      - 美国节点
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
-      - 手动切换
+      - 美国节点
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Apple.png
 
   - name: 漏网之鱼
     type: select
     proxies:
-      - 节点选择
       - DIRECT
+      - 节点选择
+      - 手动切换
+      - Ai节点
       - 香港节点
       - 台湾节点
       - 狮城节点
       - 日本节点
       - 美国节点
-      - 手动切换
+      - 流媒体节点
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Final.png
 
+  - name: 流媒体节点
+    type: url-test
+    use: [Airport01, Airport02]
+    filter: 0.1|0.2|0.3|0.5|实验性
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
+
+  - name: 香港节点
+    type: url-test
+    use: [Airport01, Airport02]
+    filter: 港|🇭🇰|香港|HK|Hong
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+
+  - name: 美国节点
+    type: url-test
+    filter: 美|🇺🇸|美国|US|States|American
+    use: [Airport01, Airport02]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+
+  - name: Ai节点
+    type: url-test
+    filter: Gemini|ai
+    use: [Airport01, Airport02]
+
   - name: 日本节点
-    type: select
+    type: url-test
     filter: 日|🇯🇵|日本|JP|Japan
     use: [Airport01, Airport02]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 
   - name: 台湾节点
-    type: select
+    type: url-test
     filter: 台|🇨🇳|台湾|TW|Tai
     use: [Airport01, Airport02]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
 
   - name: 狮城节点
-    type: select
+    type: url-test
     filter: 坡|🇸🇬|新加坡|狮城|SG|Singapore
     use: [Airport01, Airport02]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
