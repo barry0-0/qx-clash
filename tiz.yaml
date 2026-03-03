@@ -36,6 +36,13 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://cp.cloudflare.com/generate_204
+      
+  Ai-Rules: # 这里是规则的名称，可以自定义
+    type: http
+    behavior: domain # 或 classical
+    url: "https://raw.githubusercontent.com/viewer12/OverseasAI.list/main/rule/Clash/OverseasAI/OverseasAI.list"
+    path: ./rules/Loyalsoldier-Rules.txt
+    interval: 86400 # 更新间隔，单位为秒，86400秒为一天
 
 dns:
   enable: true
@@ -88,7 +95,6 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 流媒体节点
-    # icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Available_1.png
 
   # - name: 自动选择
@@ -284,8 +290,9 @@ proxy-groups:
 
   - name: Ai节点
     type: url-test
-    filter: Gemini|ai
+    filter: Gemini|ai|Ai|AI|chatgpt|ChatGPT|Chatgpt|gemini|gpt
     use: [Airport01, Airport02]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
 
   - name: 日本节点
     type: url-test
@@ -328,6 +335,7 @@ rules:
   - DOMAIN-SUFFIX,cici.com,狮城节点
   - DOMAIN-SUFFIX,anthropic.com,AI
   - DOMAIN-SUFFIX,perplexity.ai,AI
+  - RULE-SET,Ai-Rules,AI # 引用规则集，并指定匹配后的策略
 
   # PROXY策略组：需要代理访问的域名（根据个人需求自由添加）
   - DOMAIN-SUFFIX,live.com,节点选择
