@@ -804,10 +804,6 @@ rules:
   - DOMAIN-KEYWORD,openaicom-api,AI
   - DOMAIN-KEYWORD,paypal,AI
   - DOMAIN-KEYWORD,stripe,AI
-  - IP-CIDR,24.199.123.28/32,no-resolve
-  - IP-CIDR,64.23.132.171/32,no-resolve
-  - IP-ASN,14061,no-resolve 
-  - IP-ASN,20473,no-resolve
 
   # PROXY策略组：需要代理访问的域名（根据个人需求自由添加）
   - DOMAIN-SUFFIX,live.com,节点选择
