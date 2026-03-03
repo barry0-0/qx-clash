@@ -23,6 +23,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/viewer12/OverseasAI.list/main/rule/Clash/OverseasAI/OverseasAI.list"
     path: ./rules/OverseasAI.list
     interval: 86400
+  gemini-Rules:
+    type: http
+    behavior: classical
+    url: "https://git.jasuit.com/jh163888/ios_rule_script/raw/commit/bfc89edad13a234ee95a5362120ca4d6212975a5/rule/Clash/Gemini/Gemini.list"
+    path: ./rules/Gemini.list
+    interval: 86400
     
 proxy-providers:
   Airport01:
@@ -338,7 +344,8 @@ rules:
   - DOMAIN-SUFFIX,anthropic.com,AI
   - DOMAIN-SUFFIX,perplexity.ai,AI
   - RULE-SET,AI-Rules,AI
-  
+  - RULE-SET,gemini-Rules,AI
+  - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,AI
   # PROXY策略组：需要代理访问的域名（根据个人需求自由添加）
   - DOMAIN-SUFFIX,live.com,节点选择
   - DOMAIN-SUFFIX,teracloud.jp,节点选择
