@@ -296,7 +296,7 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 
   - name: Ai节点
-    type: url-test
+    type: select
     filter: Gemini|ai|Ai|AI|chatgpt|ChatGPT|Chatgpt|gemini|gpt
     use: [Airport01, Airport02]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
