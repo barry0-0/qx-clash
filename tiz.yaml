@@ -382,6 +382,16 @@ rules:
   - GEOSITE,geolocation-cn@!cn,节点选择
   # 剩下常规国内站 → 直连
   - GEOSITE,geolocation-cn,DIRECT
+  # mac系统更新屏蔽
+  - host, ns.itunes.apple.com, reject
+  - host, appldnld.apple.com, reject
+  - host, mesu.apple.com, reject
+  - host, xp.apple.com, reject
+  - host, gdmf.apple.com, reject
+  - HOST-SUFFIX, iadsdk.apple.com, reject
+  - HOST-SUFFIX, ads.internal.unity3d.com, reject
+  - HOST-SUFFIX, ads.prd.ie.internal.unity3d.com, reject
+  - HOST-SUFFIX, unityads.unity3d.com, reject
 
   # ===== 最终兜底 =====
   # ===== 局域网直连 =====
