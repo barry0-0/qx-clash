@@ -51,6 +51,17 @@ proxy-providers:
       interval: 600
       url: http://cp.cloudflare.com/generate_204
       
+  Airport03:
+    type: http
+    url: 'https://update.glados-config.com/mihomo/679136/1bbe380/21987/glados.yaml'
+    interval: 86400
+    path: ./Airport03.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://cp.cloudflare.com/generate_204
+      
+      
 dns:
   enable: true
   ipv6: false
@@ -87,7 +98,7 @@ proxy-groups:
   - name: 手动切换
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
 
   - name: 流媒体节点选择
     type: select
@@ -279,44 +290,44 @@ proxy-groups:
 
   - name: 流媒体节点
     type: url-test
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     filter: 0.1|0.2|0.3|0.5|实验性
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/ForeignMedia.png
 
   - name: 香港节点
     type: url-test
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     filter: 港|🇭🇰|香港|HK|Hong
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
   - name: 美国节点
     type: url-test
     filter: 美|🇺🇸|美国|US|States|American
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 
   - name: Ai节点
     type: select
     filter: Gemini|ai|Ai|AI|chatgpt|ChatGPT|Chatgpt|gemini|gpt
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Auto.png
 
   - name: 日本节点
     type: url-test
     filter: 日|🇯🇵|日本|JP|Japan
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 
   - name: 台湾节点
     type: url-test
     filter: 台|🇨🇳|台湾|TW|Tai
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
 
   - name: 狮城节点
     type: url-test
     filter: 坡|🇸🇬|新加坡|狮城|SG|Singapore
-    use: [Airport01, Airport02]
+    use: [Airport01, Airport02,Airport03]
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 
 rules:
